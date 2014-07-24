@@ -1,0 +1,133 @@
+/* GeoDirectory Style Modifications for X */
+
+/* General Items --------------------------------- */
+#geodir-main-content,
+.geodir_flex-container {
+	margin-top: 16px;
+}
+
+.geodir-x ul {
+	list-style: none;
+}
+
+/* Home Top Area --------------------------------- */
+.home .x-header-landmark {
+	display: none;
+}
+
+.geodir-x .x-main .geodir_advance_search_widget {
+	margin: 0;
+}
+
+.geodir-x .top_banner_section {
+	margin-bottom: 0;
+}
+
+/* Advanced Search Bar -------------------------- */
+
+.geodir-loc-bar {
+	background: rgba( 0, 0, 0, 0.05 );
+	margin: 0;
+	padding: 0;
+}
+
+.geodir-loc-bar-in {
+	background: none;
+	border: none;
+	padding: 10px;
+}
+
+.geodir-search {
+	margin: 0;
+	width: 100%;
+}
+
+.geodir-search input[type="text"],
+.geodir-search input[type="button"],
+.geodir-search input[type="submit"] {
+	border: 1px solid #ccc;
+	box-shadow: none;
+	height: auto;
+	line-height: 30px;
+	margin-right: 0 3%;
+	padding: 5px 10px;
+}
+
+.geodir-search input[type="text"] {
+	width: 30%;
+}
+
+.geodir-search input[type="submit"],
+.geodir-search input[type="button"] {
+	line-height: 28px;
+	margin-right: 0;
+	width: 11%;
+}
+
+.geodir-search input:hover[type="submit"],
+.geodir-search input:hover[type="button"] {
+	background: #333;
+	color: #fff;
+}
+
+
+/* Listings Top Area ---------------------------- */
+.geodir-cat-list .widget-title {
+	margin-top: 0;
+}
+
+.geodir-x .geodir-category-list-in {
+	background: rgba( 0, 0, 0, 0.05 );
+	border: none;
+}
+
+.widget .geodir-cat-list ul.geodir-popular-cat-list {
+	border: none;
+	border-radius: 0;
+	box-shadow: none;
+}
+
+.geodir_full_page .geodir-cat-list ul li {
+	border: none;
+}
+
+.geodir_full_page .geodir-cat-list ul li a {
+	border: none;
+}
+
+.post-type-archive .geodir-loc-bar {
+	border: none;
+	margin-top: 20px;
+}
+
+/* Navigation Items ----------------------------- */
+#menu-item-gd-location-switcher dd {
+	margin-left: 0;
+}
+
+/* Widget Items --------------------------------- */
+.geodir-chosen-container-single .chosen-single {
+	height: auto;
+}
+
+.widget ul.geodir-loginbox-list {
+	overflow: visible;
+}
+
+
+
+/* ############ STACK-SPECIFIC FIXES ############ */
+
+/* ETHOS */
+.x-ethos .entry-title {
+	margin-bottom: 20px;
+}
+
+.x-ethos .geodir-chosen-container-single .chosen-single {
+	padding: 0 0 0 8px;
+}
+
+.x-ethos .widget ul li a,
+.x-ethos .geodir_category_list_view li {
+	color: #333;
+}
