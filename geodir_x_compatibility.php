@@ -3,12 +3,11 @@
 Plugin Name: GeoDirectory - X Theme Compatibility
 Plugin URI: http://wpgeodirectory.com
 Description: This plugin lets the GeoDirectory Plugin use the X theme HTML wrappers to fit and work perfectly.
-Version: 1.0.0
+Version: 1.0.1
 Author: GeoDirectory
 Author URI: http://wpgeodirectory.com
 
 */
-
 
 
 // BECAUSE THIS PLUGIN IS CALLED BEFORE GD WE MUST CALL THIS PLUGIN ONCE GD LOADS

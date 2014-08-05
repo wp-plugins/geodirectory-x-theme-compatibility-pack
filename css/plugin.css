@@ -10,6 +10,14 @@
 	list-style: none;
 }
 
+.widget ul.geodir_category_list_view {
+	border: none;
+}
+
+.geodir_category_list_view li.geodir-gridview:last-child {
+	border-bottom: 1px solid #e1e1e1;
+}
+
 /* Home Top Area --------------------------------- */
 .home .x-header-landmark {
 	display: none;
@@ -42,24 +50,26 @@
 	width: 100%;
 }
 
+.widget .geodir-search select,
 .geodir-search input[type="text"],
 .geodir-search input[type="button"],
 .geodir-search input[type="submit"] {
 	border: 1px solid #ccc;
 	box-shadow: none;
 	height: auto;
-	line-height: 30px;
-	margin-right: 0 3%;
+	line-height: 21px;
+	margin: 0 1% 0 0;
 	padding: 5px 10px;
 }
 
+.widget .geodir-search select,
 .geodir-search input[type="text"] {
-	width: 30%;
+	width: 28%;
 }
 
 .geodir-search input[type="submit"],
 .geodir-search input[type="button"] {
-	line-height: 28px;
+	line-height: 19px;
 	margin-right: 0;
 	width: 11%;
 }
@@ -114,6 +124,9 @@
 	overflow: visible;
 }
 
+.geodir_full_page section.widget {
+	clear:both;
+}
 
 
 /* ############ STACK-SPECIFIC FIXES ############ */
@@ -130,4 +143,17 @@
 .x-ethos .widget ul li a,
 .x-ethos .geodir_category_list_view li {
 	color: #333;
+}
+
+/* Media Queries
+--------------------------------------------------- */
+@media only screen and (max-width:767px) {
+	
+	.widget .geodir-search select,
+	.geodir-search input[type="text"],
+	.geodir-search input[type="button"],
+	.geodir-search input[type="submit"] {
+		margin: 0 0 10px;
+		width: 100%;
+	}
 }
