@@ -1,6 +1,11 @@
 /* GeoDirectory Style Modifications for X */
 
 /* General Items --------------------------------- */
+
+.x-colophon.bottom {
+	clear: both;
+}
+
 #geodir-main-content,
 .geodir_flex-container {
 	margin-top: 16px;
