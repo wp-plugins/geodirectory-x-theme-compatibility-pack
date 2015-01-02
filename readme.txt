@@ -1,10 +1,10 @@
 === GeoDirectory - X Theme Compatibility Pack ===
 Contributors: stiofansisland, paoltaia, posh-john
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=payments@nomaddevs.com&item_name=Donation+for+WPGD
-Tags:  x thmee, geodirectory, address book, addressbook, addresses, bio, biographies, bios, business, business directory plugin, business-directory, businesses, directories, directory, directory plugin, directory widget, googlemap, googlemaps, google maps, list, listings, lists, member directory, members directories, members directory, microformat, microformats, profile, profiles, staff, user, users, vcard, wordpress business directory, wordpress directory, wordpress directory plugin, yelp clone, tripadvisor clone, yellow pages clone, wordpress business directory plugin, wordpress directory theme, wordpress business directory theme, wordpress city directory plugin, wordpress local directory plugin
+Tags:  x thmee, geodirectory, address book, addressbook, addresses, bio, biographies, bios, business, business directory plugin, business-directory, businesses, directories, directory, directory plugin, directory widget, geodirectory, googlemap, googlemaps, google maps, list, listings, lists, member directory, members directories, members directory, microformat, microformats, profile, profiles, staff, user, users, vcard, wordpress business directory, wordpress directory, wordpress directory plugin, yelp clone, tripadvisor clone, yellow pages clone, wordpress business directory plugin, wordpress directory theme, wordpress business directory theme, wordpress city directory plugin, wordpress local directory plugin
 Requires at least: 3.1
-Tested up to: 3.9.1
-Stable tag: 1.0.2
+Tested up to: 4.1.0
+Stable tag: 1.0.3
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Plugin providing all functions needed to make X Theme 100% compatible with GeoDirectory
@@ -21,7 +21,8 @@ This make GeoDirectory pages display gracefully when used with X.
 
 = Requires GeoDirectory and X theme from theme.co =
 
-* [Get GeoDirectory](http://wpgeodirectory.com/).
+* [Get GeoDirectory](https://wordpress.org/plugins/geodirectory/).
+* [Get GeoDirectory Addons](http://wpgeodirectory.com/).
 * [Get X](http://theme.co/x/).
 
 == Installation ==
@@ -42,6 +43,9 @@ Automatic updates should seamlessly work. We always suggest you backup up your w
 == Screenshots ==
 = coming soon =
 == Changelog ==
+= 1.0.3 =
+Double map issue becasue of GeoDirectory template change - FIXED
+Custom GD dropdown menu items don't work with new X - FIXED
 = 1.0.2 =
 Made breadcrumb function pluggable to avoid update problems
 = 1.0.1 =

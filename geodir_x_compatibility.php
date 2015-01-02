@@ -3,12 +3,11 @@
 Plugin Name: GeoDirectory - X Theme Compatibility
 Plugin URI: http://wpgeodirectory.com
 Description: This plugin lets the GeoDirectory Plugin use the X theme HTML wrappers to fit and work perfectly.
-Version: 1.0.2
+Version: 1.0.3
 Author: GeoDirectory
 Author URI: http://wpgeodirectory.com
 
 */
-
 
 // BECAUSE THIS PLUGIN IS CALLED BEFORE GD WE MUST CALL THIS PLUGIN ONCE GD LOADS
 add_action( 'plugins_loaded', 'geodir_x_action_calls', 10 );
@@ -23,6 +22,7 @@ function geodir_x_action_calls(){
 	add_filter('body_class','geodir_x_body_class');
 	
 	// HOME TOP SIDEBAR
+	remove_action( 'geodir_location_before_main_content', 'geodir_action_geodir_sidebar_home_top', 10 );
 	remove_action( 'geodir_home_before_main_content', 'geodir_action_geodir_sidebar_home_top', 10 );
 	add_action( 'geodir_wrapper_open', 'geodir_x_home_sidebar', 5 );
 	add_action( 'geodir_before_search_form', 'geodir_x_search_container_open' );
@@ -58,6 +58,7 @@ function geodir_x_action_calls(){
 	remove_action( 'geodir_search_before_main_content', 'geodir_breadcrumb', 20 );
 	remove_action( 'geodir_author_before_main_content', 'geodir_breadcrumb', 20 );
 	remove_action( 'geodir_home_before_main_content', 'geodir_breadcrumb', 20 );
+	remove_action( 'geodir_location_before_main_content', 'geodir_breadcrumb', 20 );
 	
 	
 } // Close geodir_x_action_calls
@@ -262,3 +263,17 @@ if ( ! function_exists( 'x_breadcrumbs' ) ) :
   }
   } // ends my geodir check
 endif;
+
+
+// ADD CLASS TO GD MENU ITEMS
+add_filter('geodir_location_switcher_menu_li_class','geodir_x_location_switcher_menu_li_class',10,1);
+function geodir_x_location_switcher_menu_li_class($class){
+	$class .= " menu-item-has-children ";
+	return $class;
+}
+
+add_filter('geodir_sub_menu_li_class','geodir_x_sub_menu_li_class',10,1);
+function geodir_x_sub_menu_li_class($class){
+	$class .= " menu-item-has-children ";
+	return $class;
+}
